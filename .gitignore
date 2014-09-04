@@ -1,3 +1,6 @@
-#System
+# System
 .*
 !/.gitignore
+
+# Composer
+/vendor

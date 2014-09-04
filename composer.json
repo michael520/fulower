@@ -1,0 +1,5 @@
+{
+	"require": {
+		"joomla/application": "1.*"
+	}
+}
