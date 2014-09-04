@@ -1,5 +1,10 @@
 {
 	"require": {
 		"joomla/application": "1.*"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"" : "src/"
+		}
 	}
 }
