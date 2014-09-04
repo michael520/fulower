@@ -13,7 +13,7 @@ class Yoo
 {
 	public static function yoo()
 	{
-		echo 'YooooooOOooooooo!!';
+		echo '<p>This is from src/michael/yoo.php : YooooooOOooooooo!!</p>';
 	}
 }
  
