@@ -8,9 +8,11 @@
 
 namespace Fulower\Application;
 
+use Fulower\Controller\Sakura\DisplayController;
 use Fulower\Provider\ActionProvider;
 use Fulower\Provider\ApplicationProvider;
 use Fulower\Provider\ConfigProvider;
+use Fulower\Provider\RouterProvider;
 use Fulower\Provider\WhoopsProvider;
 use Fulower\Sunflower\Action;
 use Joomla\Application\AbstractApplication;
@@ -45,7 +47,8 @@ class Application extends AbstractWebApplication
 		$this->container
 			->registerServiceProvider(new WhoopsProvider)
 			->registerServiceProvider(new ApplicationProvider($this))
-			->registerServiceProvider(new ActionProvider());
+			->registerServiceProvider(new ActionProvider)
+			->registerServiceProvider(new RouterProvider);
 
 	}
 
@@ -60,10 +63,25 @@ class Application extends AbstractWebApplication
 	protected function doExecute()
 	{
 		$action = $this->container->get('sunflower.action');
-		echo $action->go();
 
 		$config = $this->container->get('config');
-		echo $config;
+
+		$controller = $this->getController();
+
+		$controller->execute();
+
+		return;
+	}
+
+	public function getController()
+	{
+		$router = $this->container->get('router');
+
+		$route = $this->get('uri.route');
+
+		$route = str_replace('index.php/', '', $route);
+
+		return $router->getController($route);
 	}
 }
  

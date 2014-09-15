@@ -9,18 +9,13 @@
 namespace Fulower\Provider;
 
 
-use Fulower\Application\Application;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
+use Joomla\Registry\Registry;
+use Joomla\Router\Router;
 
-class ApplicationProvider implements ServiceProviderInterface
+class RouterProvider implements ServiceProviderInterface
 {
-	protected $app;
-
-	public function __construct(Application $app)
-	{
-		$this->app = $app;
-	}
 
 	/**
 	 * Registers the service provider with a DI container.
@@ -33,8 +28,22 @@ class ApplicationProvider implements ServiceProviderInterface
 	 */
 	public function register(Container $container)
 	{
-		$container->protect('app', $this->app);
-		$container->protect('input', $this->app->input);
+		$closure = function($container)
+		{
+			$input = $container->get('app')->imput;
+
+			$router = new Router($input);
+
+			$maps = new Registry;
+			$file = __DIR__ . '/../../../etc/routing.json';
+			$maps->loadFile($file);
+
+			$router->addMaps($maps->toArray());
+
+			return $router;
+		};
+
+		$container->share('router' ,$closure);
 	}
 }
  
