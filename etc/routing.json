@@ -1,4 +1,4 @@
 {
-	"olive/:id/:alias" : "Fulower\\Controller\\Olive\\DisplayController",
-	"sakura/:catid/:slug" : "Fulower\\Controller\\Sakura\\DisplayController"
+	"olive/:id/:alias" : "Fulower\\Controller\\Olive\\",
+	"sakura/:catid/:slug" : "Fulower\\Controller\\Sakura\\"
 }

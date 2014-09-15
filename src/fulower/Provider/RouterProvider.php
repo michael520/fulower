@@ -12,6 +12,7 @@ namespace Fulower\Provider;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use Joomla\Registry\Registry;
+use Joomla\Router\RestRouter;
 use Joomla\Router\Router;
 
 class RouterProvider implements ServiceProviderInterface
@@ -32,7 +33,9 @@ class RouterProvider implements ServiceProviderInterface
 		{
 			$input = $container->get('app')->imput;
 
-			$router = new Router($input);
+			$router = new RestRouter($input);
+
+			$router->isMethodInPostRequest(true);
 
 			$maps = new Registry;
 			$file = __DIR__ . '/../../../etc/routing.json';

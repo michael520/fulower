@@ -11,7 +11,7 @@ namespace Fulower\Controller\Olive;
 
 use Joomla\Controller\AbstractController;
 
-class DisplayController extends AbstractController
+class Create extends AbstractController
 {
 
 	/**
@@ -29,7 +29,7 @@ class DisplayController extends AbstractController
 	{
 		$input = $this->getInput();
 
-		echo '<p> Olive is here !!!!</p>';
+		echo '<p> Olive is Create !!!!</p>';
 
 		echo sprintf(' ID: %s', $input->getint('id'));
 
