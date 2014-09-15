@@ -10,6 +10,7 @@ namespace Fulower\Application;
 
 use Fulower\Provider\ActionProvider;
 use Fulower\Provider\ApplicationProvider;
+use Fulower\Provider\ConfigProvider;
 use Fulower\Provider\WhoopsProvider;
 use Fulower\Sunflower\Action;
 use Joomla\Application\AbstractApplication;
@@ -37,28 +38,15 @@ class Application extends AbstractWebApplication
 
 	protected function initialise()
 	{
-		$this->loadConfig();
+		$this->container->registerServiceProvider(new ConfigProvider($this->config));
 
 		define('FULOWER_DEBUG', $this->get('system.debug'));
 
-		if(FULOWER_DEBUG)
-		{
-			$this->container->registerServiceProvider(new WhoopsProvider);
-		}
-
-		$this->container->share('config', $this->config);
-
-		$this->container->registerServiceProvider(new ActionProvider);
-
-		$this->container->registerServiceProvider(new ApplicationProvider($this))
+		$this->container
+			->registerServiceProvider(new WhoopsProvider)
+			->registerServiceProvider(new ApplicationProvider($this))
 			->registerServiceProvider(new ActionProvider());
 
-	}
-
-	protected function loadConfig()
-	{
-		$file = __DIR__ . '/../../../etc/config.json';
-		$this->config->loadFile($file);
 	}
 
 	/**

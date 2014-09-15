@@ -8,11 +8,20 @@
 
 namespace Fulower\Provider;
 
+
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
+use Joomla\Registry\Registry;
 
-class WhoopsProvider implements ServiceProviderInterface
+class ConfigProvider implements ServiceProviderInterface
 {
+	protected $config;
+
+	function __construct(Registry $config)
+	{
+		$this->config = $config;
+	}
+
 	/**
 	 * Registers the service provider with a DI container.
 	 *
@@ -24,19 +33,19 @@ class WhoopsProvider implements ServiceProviderInterface
 	 */
 	public function register(Container $container)
 	{
-		if (FULOWER_DEBUG)
+		$file = __DIR__ . '/../../../etc/config.json';
+
+		if (!is_file($file))
 		{
-			return;
+			echo 'no config';
+
+			die;
 		}
 
-		$whoops = new \Whoops\Run;
-		$handler = new \Whoops\Handler\PrettyPageHandler;
+		$this->config->loadFile($file);
 
-		$whoops->pushHandler($handler);
-		$whoops->register();
-
-		$container->share('whoops', $whoops);
-		$container->share('whoops.handler', $handler);
+		$container->share('config', $this->config);
 	}
+
 }
  
