@@ -12,6 +12,7 @@ use Fulower\Controller\Sakura\DisplayController;
 use Fulower\Provider\ActionProvider;
 use Fulower\Provider\ApplicationProvider;
 use Fulower\Provider\ConfigProvider;
+use Fulower\Provider\DataBaseProvider;
 use Fulower\Provider\RouterProvider;
 use Fulower\Provider\WhoopsProvider;
 use Fulower\Sunflower\Action;
@@ -33,7 +34,7 @@ class Application extends AbstractWebApplication
 
 	public function __construct(Input $input = null, Registry $config = null, Web\WebClient $client = null)
 	{
-		$this->container = new Container;
+		$this->container = \Fulower\Helper\Container::getContainer();
 
 		parent::__construct($input, $config, $client);
 	}
@@ -48,7 +49,8 @@ class Application extends AbstractWebApplication
 			->registerServiceProvider(new WhoopsProvider)
 			->registerServiceProvider(new ApplicationProvider($this))
 			->registerServiceProvider(new ActionProvider)
-			->registerServiceProvider(new RouterProvider);
+			->registerServiceProvider(new RouterProvider)
+			->registerServiceProvider(new DataBaseProvider);
 
 	}
 

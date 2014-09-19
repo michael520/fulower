@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "39a7a3677e1179b23bb1fa0b14186358",
+    "hash": "a5666fc4cecaf0f05e94fb8ff0a4defd",
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "1.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff"
+                "reference": "6ad204c4280b0f178ab903047cb684ce66c4954b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/9f451fbc7b8cad5e71300672c340c28c6bec09ff",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/6ad204c4280b0f178ab903047cb684ce66c4954b",
+                "reference": "6ad204c4280b0f178ab903047cb684ce66c4954b",
                 "shasum": ""
             },
             "require": {
@@ -62,20 +62,20 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-07-11 05:56:54"
+            "time": "2014-08-28 17:38:36"
         },
         {
             "name": "joomla/application",
-            "version": "1.2.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/application.git",
-                "reference": "6eaa27a50d5362cf5d73acf9eade50ae042097da"
+                "reference": "dda43fd39603d18ac7a53093bd8b89d07ef5e613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/application/zipball/6eaa27a50d5362cf5d73acf9eade50ae042097da",
-                "reference": "6eaa27a50d5362cf5d73acf9eade50ae042097da",
+                "url": "https://api.github.com/repos/joomla-framework/application/zipball/dda43fd39603d18ac7a53093bd8b89d07ef5e613",
+                "reference": "dda43fd39603d18ac7a53093bd8b89d07ef5e613",
                 "shasum": ""
             },
             "require": {
@@ -88,9 +88,16 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "joomla/test": "~1.1"
+                "joomla/test": "~1.1",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Application\\": "src/",
@@ -108,7 +115,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-05-20 14:35:14"
+            "time": "2014-09-02 12:27:00"
         },
         {
             "name": "joomla/compat",
@@ -148,16 +155,16 @@
         },
         {
             "name": "joomla/controller",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/controller.git",
-                "reference": "5177cf40e146c74d71f0c04ef0568d549afd564c"
+                "reference": "fbf8946e176fe4f7d417113b924f3adaf1eef58e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/controller/zipball/5177cf40e146c74d71f0c04ef0568d549afd564c",
-                "reference": "5177cf40e146c74d71f0c04ef0568d549afd564c",
+                "url": "https://api.github.com/repos/joomla-framework/controller/zipball/fbf8946e176fe4f7d417113b924f3adaf1eef58e",
+                "reference": "fbf8946e176fe4f7d417113b924f3adaf1eef58e",
                 "shasum": ""
             },
             "require": {
@@ -166,13 +173,20 @@
             "require-dev": {
                 "joomla/application": "~1.0",
                 "joomla/input": "~1.0",
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "suggest": {
                 "joomla/application": "~1.0",
                 "joomla/input": "~1.0"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Controller\\": "src/",
@@ -190,20 +204,20 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-02-09 01:25:57"
+            "time": "2014-09-01 01:37:42"
         },
         {
             "name": "joomla/database",
-            "version": "1.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/database.git",
-                "reference": "2b979896577e2f0d05ac2cec9734dc5b35650067"
+                "reference": "30eb0e2b4323b812e79a963f1414a1ea66d0d4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/database/zipball/2b979896577e2f0d05ac2cec9734dc5b35650067",
-                "reference": "2b979896577e2f0d05ac2cec9734dc5b35650067",
+                "url": "https://api.github.com/repos/joomla-framework/database/zipball/30eb0e2b4323b812e79a963f1414a1ea66d0d4a0",
+                "reference": "30eb0e2b4323b812e79a963f1414a1ea66d0d4a0",
                 "shasum": ""
             },
             "require": {
@@ -211,9 +225,17 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/dbunit": "~1.2",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Database\\": "src/",
@@ -231,26 +253,35 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-08-17 17:41:07"
+            "time": "2014-09-05 16:06:52"
         },
         {
             "name": "joomla/di",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/di.git",
-                "reference": "4866c58e92ce4e851cd87d5d9d31b069b7284267"
+                "reference": "2632217f353d6585318fb6f0fdcc4d2c370dfdcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/di/zipball/4866c58e92ce4e851cd87d5d9d31b069b7284267",
-                "reference": "4866c58e92ce4e851cd87d5d9d31b069b7284267",
+                "url": "https://api.github.com/repos/joomla-framework/di/zipball/2632217f353d6585318fb6f0fdcc4d2c370dfdcc",
+                "reference": "2632217f353d6585318fb6f0fdcc4d2c370dfdcc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\DI\\": "src/",
@@ -271,26 +302,35 @@
                 "ioc",
                 "joomla"
             ],
-            "time": "2014-03-21 13:20:34"
+            "time": "2014-09-01 01:45:57"
         },
         {
             "name": "joomla/event",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/event.git",
-                "reference": "bb957bc45aba897e465384bbe21cd0eb79aca901"
+                "reference": "31031048afdbc7e41c4abf3cb66089d22f482b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/event/zipball/bb957bc45aba897e465384bbe21cd0eb79aca901",
-                "reference": "bb957bc45aba897e465384bbe21cd0eb79aca901",
+                "url": "https://api.github.com/repos/joomla-framework/event/zipball/31031048afdbc7e41c4abf3cb66089d22f482b7f",
+                "reference": "31031048afdbc7e41c4abf3cb66089d22f482b7f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Event\\": "src/",
@@ -308,26 +348,35 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-02-09 01:30:54"
+            "time": "2014-09-01 01:47:26"
         },
         {
             "name": "joomla/filesystem",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/filesystem.git",
-                "reference": "31884adf5470baf14de74bfd36482fd18ae048ad"
+                "reference": "ae03a09c35e1aaf8e6ec30c19f3b085eafd698c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/filesystem/zipball/31884adf5470baf14de74bfd36482fd18ae048ad",
-                "reference": "31884adf5470baf14de74bfd36482fd18ae048ad",
+                "url": "https://api.github.com/repos/joomla-framework/filesystem/zipball/ae03a09c35e1aaf8e6ec30c19f3b085eafd698c5",
+                "reference": "ae03a09c35e1aaf8e6ec30c19f3b085eafd698c5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Filesystem\\": "src/",
@@ -345,20 +394,20 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-04-10 02:54:58"
+            "time": "2014-09-01 01:50:51"
         },
         {
             "name": "joomla/filter",
-            "version": "1.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/filter.git",
-                "reference": "bd097a34c1f94d54589462c960fd41921e61c1c9"
+                "reference": "2f9618f8df410e51f6cd457203b8e20a5e4933bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/filter/zipball/bd097a34c1f94d54589462c960fd41921e61c1c9",
-                "reference": "bd097a34c1f94d54589462c960fd41921e61c1c9",
+                "url": "https://api.github.com/repos/joomla-framework/filter/zipball/2f9618f8df410e51f6cd457203b8e20a5e4933bd",
+                "reference": "2f9618f8df410e51f6cd457203b8e20a5e4933bd",
                 "shasum": ""
             },
             "require": {
@@ -366,12 +415,19 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/language": "~1.0"
+                "joomla/language": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "suggest": {
                 "joomla/language": "Required only if you want to use `OutputFilter::stringURLSafe`."
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Filter\\": "src/",
@@ -389,7 +445,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-02-09 07:45:50"
+            "time": "2014-09-01 01:52:44"
         },
         {
             "name": "joomla/input",
@@ -434,16 +490,16 @@
         },
         {
             "name": "joomla/model",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/model.git",
-                "reference": "f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9"
+                "reference": "d495aa88e33b964ecc94ed8636be590e5084b8f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/model/zipball/f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9",
-                "reference": "f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9",
+                "url": "https://api.github.com/repos/joomla-framework/model/zipball/d495aa88e33b964ecc94ed8636be590e5084b8f5",
+                "reference": "d495aa88e33b964ecc94ed8636be590e5084b8f5",
                 "shasum": ""
             },
             "require": {
@@ -452,9 +508,16 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Model\\": "src/",
@@ -472,11 +535,11 @@
                 "joomla",
                 "model"
             ],
-            "time": "2014-02-09 02:18:14"
+            "time": "2014-09-01 02:08:45"
         },
         {
             "name": "joomla/registry",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/registry.git",
@@ -530,16 +593,16 @@
         },
         {
             "name": "joomla/router",
-            "version": "1.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/router.git",
-                "reference": "e7a22af3ae07ab33999c575dff29ab423b662859"
+                "reference": "1374334a0b7190284755b744515eb99fe59fc978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/router/zipball/e7a22af3ae07ab33999c575dff29ab423b662859",
-                "reference": "e7a22af3ae07ab33999c575dff29ab423b662859",
+                "url": "https://api.github.com/repos/joomla-framework/router/zipball/1374334a0b7190284755b744515eb99fe59fc978",
+                "reference": "1374334a0b7190284755b744515eb99fe59fc978",
                 "shasum": ""
             },
             "require": {
@@ -548,9 +611,16 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Router\\": "src/",
@@ -568,7 +638,7 @@
                 "joomla",
                 "router"
             ],
-            "time": "2014-08-23 19:40:48"
+            "time": "2014-09-01 02:17:33"
         },
         {
             "name": "joomla/session",
@@ -617,25 +687,32 @@
         },
         {
             "name": "joomla/string",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/string.git",
-                "reference": "f1152e6cce135ff90f4b0097792e8be23989b143"
+                "reference": "edc67e83f8e603ac7b55bf32b87d5b53fe1acd8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/string/zipball/f1152e6cce135ff90f4b0097792e8be23989b143",
-                "reference": "f1152e6cce135ff90f4b0097792e8be23989b143",
+                "url": "https://api.github.com/repos/joomla-framework/string/zipball/edc67e83f8e603ac7b55bf32b87d5b53fe1acd8a",
+                "reference": "edc67e83f8e603ac7b55bf32b87d5b53fe1acd8a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\String\\": "src/",
@@ -653,26 +730,36 @@
                 "joomla",
                 "string"
             ],
-            "time": "2014-08-23 19:33:54"
+            "time": "2014-09-18 12:21:47"
         },
         {
             "name": "joomla/uri",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/uri.git",
-                "reference": "980e532e4235bb8f1ada15b28822abbeb171da3f"
+                "reference": "c955ddfb396752fb87b3275db9c1d66effa4262c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/980e532e4235bb8f1ada15b28822abbeb171da3f",
-                "reference": "980e532e4235bb8f1ada15b28822abbeb171da3f",
+                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/c955ddfb396752fb87b3275db9c1d66effa4262c",
+                "reference": "c955ddfb396752fb87b3275db9c1d66effa4262c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Uri\\": "src/",
@@ -690,11 +777,11 @@
                 "joomla",
                 "uri"
             ],
-            "time": "2014-02-09 02:57:17"
+            "time": "2014-09-01 03:05:41"
         },
         {
             "name": "joomla/utilities",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/utilities.git",
@@ -741,16 +828,16 @@
         },
         {
             "name": "joomla/view",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/view.git",
-                "reference": "4f368e317921f580a455adc3b95b3423e53ea8e8"
+                "reference": "2254fec4b1a11d2dfd0fe9dd096b263194583d22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/view/zipball/4f368e317921f580a455adc3b95b3423e53ea8e8",
-                "reference": "4f368e317921f580a455adc3b95b3423e53ea8e8",
+                "url": "https://api.github.com/repos/joomla-framework/view/zipball/2254fec4b1a11d2dfd0fe9dd096b263194583d22",
+                "reference": "2254fec4b1a11d2dfd0fe9dd096b263194583d22",
                 "shasum": ""
             },
             "require": {
@@ -759,9 +846,16 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\View\\": "src/",
@@ -779,23 +873,28 @@
                 "joomla",
                 "view"
             ],
-            "time": "2014-02-09 07:07:32"
+            "time": "2014-09-01 02:30:31"
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
                 "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Psr\\Log\\": ""
@@ -817,24 +916,572 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2014-01-18 15:33:09"
+        },
+        {
+            "name": "robmorgan/phinx",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robmorgan/phinx.git",
+                "reference": "ac0d39151cddd737ce433cee82d14c5a771040d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/ac0d39151cddd737ce433cee82d14c5a771040d1",
+                "reference": "ac0d39151cddd737ce433cee82d14c5a771040d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/class-loader": "2.*",
+                "symfony/config": "2.*",
+                "symfony/console": "2.*",
+                "symfony/yaml": "2.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "dev-phpcs-fixer"
+            },
+            "bin": [
+                "bin/phinx"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Phinx": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Morgan",
+                    "email": "robbym@gmail.com",
+                    "homepage": "http://robmorgan.id.au",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Phinx makes it ridiculously easy to manage the database migrations for your PHP app.",
+            "homepage": "http://phinx.org",
+            "keywords": [
+                "database",
+                "database migrations",
+                "db",
+                "migrations",
+                "phinx"
+            ],
+            "time": "2014-09-18 16:57:52"
+        },
+        {
+            "name": "symfony/class-loader",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/ClassLoader",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ClassLoader.git",
+                "reference": "bdf77ac00d4b6bf6e689981f5e7e5dbba9014f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/bdf77ac00d4b6bf6e689981f5e7e5dbba9014f11",
+                "reference": "bdf77ac00d4b6bf6e689981f5e7e5dbba9014f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/finder": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\ClassLoader\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony ClassLoader Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-31 03:28:38"
+        },
+        {
+            "name": "symfony/config",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Config",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Config.git",
+                "reference": "472b64a8343c26cd3ac1e80cd11f7653e3eb57f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/472b64a8343c26cd3ac1e80cd11f7653e3eb57f4",
+                "reference": "472b64a8343c26cd3ac1e80cd11f7653e3eb57f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/filesystem": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Config\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-31 03:28:38"
+        },
+        {
+            "name": "symfony/console",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "0f682ba7bd8102ed9374d247ca9c13236c2f1008"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/0f682ba7bd8102ed9374d247ca9c13236c2f1008",
+                "reference": "0f682ba7bd8102ed9374d247ca9c13236c2f1008",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-17 09:54:14"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "75f5f5c8ff1497a2071f9c77484390087e379406"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/75f5f5c8ff1497a2071f9c77484390087e379406",
+                "reference": "75f5f5c8ff1497a2071f9c77484390087e379406",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-04 21:09:17"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "9f94dc5d8d7b49a9cb789853278af2b07a0aa4fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9f94dc5d8d7b49a9cb789853278af2b07a0aa4fd",
+                "reference": "9f94dc5d8d7b49a9cb789853278af2b07a0aa4fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-17 09:54:14"
+        },
+        {
+            "name": "windwalker/compare",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-compare.git",
+                "reference": "1f3ce7e3de74d3493c0b679462e8de888bf9a226"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-compare/zipball/1f3ce7e3de74d3493c0b679462e8de888bf9a226",
+                "reference": "1f3ce7e3de74d3493c0b679462e8de888bf9a226",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "require-dev": {
+                "windwalker/test": "dev-master"
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Compare\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Compare package",
+            "homepage": "https://github.com/ventoviro/windwalker-compare",
+            "keywords": [
+                "compare",
+                "framework",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/compat",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-compat.git",
+                "reference": "64b7fcca6098d47a99977adb3fad0f76c8b9d890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-compat/zipball/64b7fcca6098d47a99977adb3fad0f76c8b9d890",
+                "reference": "64b7fcca6098d47a99977adb3fad0f76c8b9d890",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "require-dev": {
+                "windwalker/test": "dev-master"
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "classmap": [
+                    "JsonSerializable.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Compat package",
+            "homepage": "https://github.com/ventoviro/windwalker-compat",
+            "keywords": [
+                "compat",
+                "framework",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/data",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-data.git",
+                "reference": "24b64bb8703ba3e626b3b13f53ba8af75133f899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-data/zipball/24b64bb8703ba3e626b3b13f53ba8af75133f899",
+                "reference": "24b64bb8703ba3e626b3b13f53ba8af75133f899",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10",
+                "windwalker/compat": "dev-master"
+            },
+            "require-dev": {
+                "windwalker/test": "dev-master"
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Data\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Data package",
+            "homepage": "https://github.com/ventoviro/windwalker-data",
+            "keywords": [
+                "data",
+                "framework",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/database",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-database.git",
+                "reference": "29a96002aa9ac0355220cf9a775618642363e794"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-database/zipball/29a96002aa9ac0355220cf9a775618642363e794",
+                "reference": "29a96002aa9ac0355220cf9a775618642363e794",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10",
+                "psr/log": "1.*",
+                "windwalker/query": "dev-master"
+            },
+            "require-dev": {
+                "windwalker/compare": "dev-master",
+                "windwalker/utilities": "dev-master"
+            },
+            "suggest": {
+                "windwalker/compare": "Install 2.* if you want to use Compare object."
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Database package",
+            "homepage": "https://github.com/ventovire/windwalker-database",
+            "keywords": [
+                "database",
+                "framework",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/datamapper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-datamapper.git",
+                "reference": "d83b84a7ad6c9c0ad95e3cf647194f49a0370393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-datamapper/zipball/d83b84a7ad6c9c0ad95e3cf647194f49a0370393",
+                "reference": "d83b84a7ad6c9c0ad95e3cf647194f49a0370393",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10",
+                "windwalker/data": "dev-master",
+                "windwalker/database": "dev-master"
+            },
+            "require-dev": {
+                "windwalker/compare": "dev-master",
+                "windwalker/test": "dev-master"
+            },
+            "suggest": {
+                "windwalker/compare": "Install 2.* if you want to use Compare object."
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\DataMapper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker DataMapper package",
+            "homepage": "https://github.com/ventoviro/windwalker-datamapper",
+            "keywords": [
+                "datamapper",
+                "framework",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/query",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-query.git",
+                "reference": "08a9f4b31af61ccae482cb7be9fc9c581632e40e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-query/zipball/08a9f4b31af61ccae482cb7be9fc9c581632e40e",
+                "reference": "08a9f4b31af61ccae482cb7be9fc9c581632e40e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "require-dev": {
+                "jdorn/sql-formatter": "1.*",
+                "windwalker/database": "dev-master",
+                "windwalker/test": "dev-master"
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Query\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Query package",
+            "homepage": "https://github.com/ventoviro/windwalker-query",
+            "keywords": [
+                "framework",
+                "query",
+                "windwalker"
+            ],
+            "time": "2014-09-16 17:42:57"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
-    "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "windwalker/datamapper": 20,
+        "windwalker/compare": 20
+    },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }

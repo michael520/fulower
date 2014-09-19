@@ -1,4 +1,5 @@
 {
+	"minimum-stability": "dev",
 	"require": {
 		"joomla/application": "1.*",
 		"joomla/di" : "1.*",
@@ -6,6 +7,9 @@
 		"joomla/model" : "1.*",
 		"joomla/view" : "1.*",
 		"joomla/router" : "1.*",
+		"windwalker/datamapper" : "dev-master",
+		"windwalker/compare" : "dev-master",
+		"robmorgan/phinx" : "*",
 		"filp/whoops" : "1.*"
 	},
 	"autoload" : {

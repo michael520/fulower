@@ -9,7 +9,11 @@
 namespace Fulower\Controller\Olive;
 
 
+use Fulower\Helper\Container;
+use Fulower\Model\OliveModel;
+use Fulower\View\Olive\HtmlView;
 use Joomla\Controller\AbstractController;
+use Joomla\Model\AbstractModel;
 
 class Get extends AbstractController
 {
@@ -27,6 +31,12 @@ class Get extends AbstractController
 	 */
 	public function execute()
 	{
+		$model = new OliveModel(Container::get('db'));
+
+		$view = new HtmlView($model);
+
+		echo $view->render();
+
 		$input = $this->getInput();
 
 		echo '<p> Olive is here !!!!</p>';
