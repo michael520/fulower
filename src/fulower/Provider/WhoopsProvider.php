@@ -24,7 +24,7 @@ class WhoopsProvider implements ServiceProviderInterface
 	 */
 	public function register(Container $container)
 	{
-		if (FULOWER_DEBUG)
+		if (!FULOWER_DEBUG)
 		{
 			return;
 		}

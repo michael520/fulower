@@ -16,9 +16,9 @@ class DatabaseModel extends AbstractModel
 {
 	protected $db;
 
-	public function __construct($db, Registry $state = null)
+	public function __construct($db = null, Registry $state = null)
 	{
-		$this->db = $db;
+		$this->db = $db ? : $this->getDb();
 
 		parent::__construct($state);
 	}

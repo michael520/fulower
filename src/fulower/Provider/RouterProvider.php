@@ -31,7 +31,7 @@ class RouterProvider implements ServiceProviderInterface
 	{
 		$closure = function($container)
 		{
-			$input = $container->get('app')->imput;
+			$input = $container->get('app')->input;
 
 			$router = new RestRouter($input);
 

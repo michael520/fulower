@@ -8,7 +8,9 @@
 
 namespace Fulower\View\Olive;
 
-class HtmlView extends \Joomla\View\AbstractView
+use Fulower\Windwalker\View\HtmlView as WindwalkerHtmlView;
+
+class HtmlView extends WindwalkerHtmlView
 {
 
 	/**
@@ -21,13 +23,7 @@ class HtmlView extends \Joomla\View\AbstractView
 	 */
 	public function render()
 	{
-		$item = $this->model->getItem();
-
-		echo '<pre>';
-		print_r($item);
-		echo '</pre>';
-
-		return 'olive view !!!!';
+		return parent::render();
 	}
 }
  

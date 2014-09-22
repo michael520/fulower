@@ -9,6 +9,7 @@
 		"joomla/router" : "1.*",
 		"windwalker/datamapper" : "dev-master",
 		"windwalker/compare" : "dev-master",
+		"windwalker/renderer" : "dev-master",
 		"robmorgan/phinx" : "*",
 		"filp/whoops" : "1.*"
 	},

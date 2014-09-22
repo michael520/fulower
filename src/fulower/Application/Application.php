@@ -34,7 +34,7 @@ class Application extends AbstractWebApplication
 
 	public function __construct(Input $input = null, Registry $config = null, Web\WebClient $client = null)
 	{
-		$this->container = \Fulower\Helper\Container::getContainer();
+		$this->container = new Container;
 
 		parent::__construct($input, $config, $client);
 	}
@@ -70,7 +70,10 @@ class Application extends AbstractWebApplication
 
 		$controller = $this->getController();
 
-		$controller->execute();
+		$controller
+			->setContainer($this->container)
+			->setApplication($this)
+			->execute();
 
 		return;
 	}

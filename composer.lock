@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a5666fc4cecaf0f05e94fb8ff0a4defd",
+    "hash": "320b631cc31edfb1ede607caaa7ed02a",
     "packages": [
         {
             "name": "filp/whoops",
@@ -924,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/robmorgan/phinx.git",
-                "reference": "ac0d39151cddd737ce433cee82d14c5a771040d1"
+                "reference": "0bdacd0a4fab1fe703c33bfc6839c13185f605fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/ac0d39151cddd737ce433cee82d14c5a771040d1",
-                "reference": "ac0d39151cddd737ce433cee82d14c5a771040d1",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/0bdacd0a4fab1fe703c33bfc6839c13185f605fd",
+                "reference": "0bdacd0a4fab1fe703c33bfc6839c13185f605fd",
                 "shasum": ""
             },
             "require": {
@@ -973,7 +973,7 @@
                 "migrations",
                 "phinx"
             ],
-            "time": "2014-09-18 16:57:52"
+            "time": "2014-09-20 14:57:15"
         },
         {
             "name": "symfony/class-loader",
@@ -1264,61 +1264,21 @@
             "time": "2014-09-16 17:42:57"
         },
         {
-            "name": "windwalker/compat",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ventoviro/windwalker-compat.git",
-                "reference": "64b7fcca6098d47a99977adb3fad0f76c8b9d890"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ventoviro/windwalker-compat/zipball/64b7fcca6098d47a99977adb3fad0f76c8b9d890",
-                "reference": "64b7fcca6098d47a99977adb3fad0f76c8b9d890",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.10"
-            },
-            "require-dev": {
-                "windwalker/test": "dev-master"
-            },
-            "type": "windwalker-package",
-            "autoload": {
-                "classmap": [
-                    "JsonSerializable.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Windwalker Compat package",
-            "homepage": "https://github.com/ventoviro/windwalker-compat",
-            "keywords": [
-                "compat",
-                "framework",
-                "windwalker"
-            ],
-            "time": "2014-09-16 17:42:57"
-        },
-        {
             "name": "windwalker/data",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ventoviro/windwalker-data.git",
-                "reference": "24b64bb8703ba3e626b3b13f53ba8af75133f899"
+                "reference": "0f0f20bb08af5a86f9f9ed29d32a978be2030b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ventoviro/windwalker-data/zipball/24b64bb8703ba3e626b3b13f53ba8af75133f899",
-                "reference": "24b64bb8703ba3e626b3b13f53ba8af75133f899",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-data/zipball/0f0f20bb08af5a86f9f9ed29d32a978be2030b5d",
+                "reference": "0f0f20bb08af5a86f9f9ed29d32a978be2030b5d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.10",
-                "windwalker/compat": "dev-master"
+                "php": ">=5.3.10"
             },
             "require-dev": {
                 "windwalker/test": "dev-master"
@@ -1340,7 +1300,7 @@
                 "framework",
                 "windwalker"
             ],
-            "time": "2014-09-16 17:42:57"
+            "time": "2014-09-21 09:53:49"
         },
         {
             "name": "windwalker/database",
@@ -1348,12 +1308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ventoviro/windwalker-database.git",
-                "reference": "29a96002aa9ac0355220cf9a775618642363e794"
+                "reference": "b1b9e620ad321e79cd7c636d51abb31d0ecb6967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ventoviro/windwalker-database/zipball/29a96002aa9ac0355220cf9a775618642363e794",
-                "reference": "29a96002aa9ac0355220cf9a775618642363e794",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-database/zipball/b1b9e620ad321e79cd7c636d51abb31d0ecb6967",
+                "reference": "b1b9e620ad321e79cd7c636d51abb31d0ecb6967",
                 "shasum": ""
             },
             "require": {
@@ -1363,6 +1323,7 @@
             },
             "require-dev": {
                 "windwalker/compare": "dev-master",
+                "windwalker/test": "dev-master",
                 "windwalker/utilities": "dev-master"
             },
             "suggest": {
@@ -1385,7 +1346,7 @@
                 "framework",
                 "windwalker"
             ],
-            "time": "2014-09-16 17:42:57"
+            "time": "2014-09-20 14:22:26"
         },
         {
             "name": "windwalker/datamapper",
@@ -1472,6 +1433,96 @@
                 "windwalker"
             ],
             "time": "2014-09-16 17:42:57"
+        },
+        {
+            "name": "windwalker/registry",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-registry.git",
+                "reference": "643f6f6a486a8bbfe59cb1d917d58d53ba054cde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-registry/zipball/643f6f6a486a8bbfe59cb1d917d58d53ba054cde",
+                "reference": "643f6f6a486a8bbfe59cb1d917d58d53ba054cde",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "require-dev": {
+                "symfony/yaml": "2.*",
+                "windwalker/test": "dev-master"
+            },
+            "suggest": {
+                "symfony/yaml": "Install 2.* if you require YAML support."
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Registry\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Registry package",
+            "homepage": "https://github.com/ventoviro/windwalker-registry",
+            "keywords": [
+                "framework",
+                "registry",
+                "windwalker"
+            ],
+            "time": "2014-09-21 16:37:54"
+        },
+        {
+            "name": "windwalker/renderer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ventoviro/windwalker-renderer.git",
+                "reference": "775fb06a216fe2f243a5d370aeb43fc34d01fd2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ventoviro/windwalker-renderer/zipball/775fb06a216fe2f243a5d370aeb43fc34d01fd2b",
+                "reference": "775fb06a216fe2f243a5d370aeb43fc34d01fd2b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10",
+                "windwalker/data": "dev-master",
+                "windwalker/registry": "dev-master"
+            },
+            "require-dev": {
+                "windwalker/filesystem": "dev-master",
+                "windwalker/test": "dev-master"
+            },
+            "suggest": {
+                "illuminate/view": "Install 4.1.*(PHP 5.3) or 4.2.*(PHP 5.4) if you require Laravel Blade engine.",
+                "mustache/mustache": "Install 2.* if you require Mustache engine.",
+                "twig/twig": "Install 1.* if you require Twig engine."
+            },
+            "type": "windwalker-package",
+            "autoload": {
+                "psr-4": {
+                    "Windwalker\\Renderer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Windwalker Renderer package",
+            "homepage": "https://github.com/ventoviro/windwalker-renderer",
+            "keywords": [
+                "framework",
+                "renderer",
+                "windwalker"
+            ],
+            "time": "2014-09-21 16:53:18"
         }
     ],
     "packages-dev": [],
@@ -1479,7 +1530,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "windwalker/datamapper": 20,
-        "windwalker/compare": 20
+        "windwalker/compare": 20,
+        "windwalker/renderer": 20
     },
     "prefer-stable": false,
     "platform": [],

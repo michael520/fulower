@@ -12,10 +12,12 @@ namespace Fulower\Controller\Olive;
 use Fulower\Helper\Container;
 use Fulower\Model\OliveModel;
 use Fulower\View\Olive\HtmlView;
+use Fulower\Windwalker\Controller\Controller;
 use Joomla\Controller\AbstractController;
 use Joomla\Model\AbstractModel;
+use Windwalker\Renderer\PhpRenderer;
 
-class Get extends AbstractController
+class Get extends Controller
 {
 
 	/**
@@ -31,11 +33,7 @@ class Get extends AbstractController
 	 */
 	public function execute()
 	{
-		$model = new OliveModel(Container::get('db'));
-
-		$view = new HtmlView($model);
-
-		echo $view->render();
+		$model = new OliveModel($this->container->get('db'));
 
 		$input = $this->getInput();
 
@@ -44,6 +42,19 @@ class Get extends AbstractController
 		echo sprintf(' ID: %s', $input->getint('id'));
 
 		echo sprintf(' Alias: %s', $input->get('alias'));
+
+		$item = $model->getItem();
+
+		$paths = new \SplPriorityQueue;
+
+		$paths->insert(FULOWER_TEMPLATE . '/_global', 128);
+		$paths->insert(FULOWER_TEMPLATE . '/olive', 256);
+
+		$view = new HtmlView(array('item' => $item), new PhpRenderer($paths));
+
+		echo $view->setLayout('default')->render();
+
+		return true;
 	}
 }
  
