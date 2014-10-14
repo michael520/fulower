@@ -1,8 +1,8 @@
 {
-	"olive/:id/:alias" : "Fulower\\Controller\\Olive\\",
-	"sakura/:catid/:slug" : "Fulower\\Controller\\Sakura\\",
+	"olive/:id/:alias" : "Olive\\",
+	"sakura/:catid/:slug" : "Sakura\\",
 
-	"fulower" : "Fulower\\Controller\\Fulower\\",
-	"fulower/:id" : "Fulower\\Controller\\Fulower\\",
-	"fulowers" : "Fulower\\Controller\\Fulowers\\"
+	"flower" : "Flower\\",
+	"flower/:id" : "Flower\\",
+	"flowers" : "Flowers\\"
 }

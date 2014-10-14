@@ -1,20 +1,19 @@
 <?php
 /**
- * Part of fulower project. 
+ * Part of flower project. 
  *
- * @copyright  Copyright (C) 2011 - 2014 SMS Taiwan, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE
+ * @copyright  Copyright (C) 2014 {ORGANIZATION}. All rights reserved.
+ * @license    GNU General Public License version 2 or later;
  */
 
-namespace test\Stub;
+namespace Test\Stub;
 
-
-use Fulower\Sunflower\Action;
+use Flower\Sunflower\Action;
 
 /**
- * Class StubAction
- *
- * @since 1.0
+ * The StubAction class.
+ * 
+ * @since  {DEPLOY_VERSION}
  */
 class StubAction extends Action
 {
@@ -29,7 +28,7 @@ class StubAction extends Action
 
 	public function time()
 	{
-		return $this->time = parent::time();
+		return 123456;
 	}
 
 	public function go2()
@@ -49,6 +48,5 @@ class StubAction extends Action
 
 		return $echo;
 	}
-
 }
  

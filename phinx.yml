@@ -6,19 +6,19 @@ environments:
     default_database: development
     production:
         adapter: mysql
-        host: 127.0.0.1
-        name: fulower_db
+        host: localhost
+        name: production_db
         user: root
-        pass: 'mysql'
+        pass: ''
         port: 3306
         charset: utf8
 
     development:
         adapter: mysql
-        host: 127.0.0.1
-        name: fulower_db
+        host: localhost
+        name: flower
         user: root
-        pass: 'mysql'
+        pass: '1234'
         port: 3306
         charset: utf8
 

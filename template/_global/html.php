@@ -1,12 +1,12 @@
 <?php
 /**
- * Part of fulower project. 
+ * Part of flower project. 
  *
- * @copyright  Copyright (C) 2011 - 2014 SMS Taiwan, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE
+ * @copyright  Copyright (C) 2014 {ORGANIZATION}. All rights reserved.
+ * @license    GNU General Public License version 2 or later;
  */
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +40,7 @@
 		}
 		.starter-template {
 			padding: 40px 15px;
-			text-align: center;
+			/*text-align: center;*/
 		}
 	</style>
 </head>
@@ -71,10 +71,10 @@
 <div class="container">
 
 	<div class="starter-template">
-		<?php $this->block('content');?>
+		<?php $this->block('content'); ?>
 		<h1>Bootstrap starter template</h1>
 		<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-		<?php $this->endblock();?>
+		<?php $this->endblock(); ?>
 	</div>
 
 </div><!-- /.container -->

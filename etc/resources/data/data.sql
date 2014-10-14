@@ -1,3 +1,4 @@
+
 CREATE TABLE IF NOT EXISTS `ww_categories` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,

@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af798e410000d002c734a8db26e87cb5",
+    "hash": "aa4ff468d8546dd2bc670e2ea59fc6e4",
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "dev-master",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "bb5a04497e303b097e3c8da243d0574978340511"
+                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/bb5a04497e303b097e3c8da243d0574978340511",
-                "reference": "bb5a04497e303b097e3c8da243d0574978340511",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/9f451fbc7b8cad5e71300672c340c28c6bec09ff",
+                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff",
                 "shasum": ""
             },
             "require": {
@@ -62,20 +62,20 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-09-23 04:08:46"
+            "time": "2014-07-11 05:56:54"
         },
         {
             "name": "joomla/application",
-            "version": "dev-master",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/application.git",
-                "reference": "27734a012547f201dfea6ced7a22c49a34710b45"
+                "reference": "6eaa27a50d5362cf5d73acf9eade50ae042097da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/application/zipball/27734a012547f201dfea6ced7a22c49a34710b45",
-                "reference": "27734a012547f201dfea6ced7a22c49a34710b45",
+                "url": "https://api.github.com/repos/joomla-framework/application/zipball/6eaa27a50d5362cf5d73acf9eade50ae042097da",
+                "reference": "6eaa27a50d5362cf5d73acf9eade50ae042097da",
                 "shasum": ""
             },
             "require": {
@@ -88,16 +88,9 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "joomla/test": "~1.1",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
+                "joomla/test": "~1.1"
             },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Application\\": "src/",
@@ -115,7 +108,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-09-25 15:06:54"
+            "time": "2014-05-20 14:35:14"
         },
         {
             "name": "joomla/compat",
@@ -155,16 +148,16 @@
         },
         {
             "name": "joomla/controller",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/controller.git",
-                "reference": "fbf8946e176fe4f7d417113b924f3adaf1eef58e"
+                "reference": "5177cf40e146c74d71f0c04ef0568d549afd564c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/controller/zipball/fbf8946e176fe4f7d417113b924f3adaf1eef58e",
-                "reference": "fbf8946e176fe4f7d417113b924f3adaf1eef58e",
+                "url": "https://api.github.com/repos/joomla-framework/controller/zipball/5177cf40e146c74d71f0c04ef0568d549afd564c",
+                "reference": "5177cf40e146c74d71f0c04ef0568d549afd564c",
                 "shasum": ""
             },
             "require": {
@@ -173,20 +166,13 @@
             "require-dev": {
                 "joomla/application": "~1.0",
                 "joomla/input": "~1.0",
-                "joomla/test": "~1.0",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
+                "joomla/test": "~1.0"
             },
             "suggest": {
                 "joomla/application": "~1.0",
                 "joomla/input": "~1.0"
             },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Controller\\": "src/",
@@ -204,7 +190,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-09-01 01:37:42"
+            "time": "2014-02-09 01:25:57"
         },
         {
             "name": "joomla/database",
@@ -257,31 +243,22 @@
         },
         {
             "name": "joomla/di",
-            "version": "dev-master",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/di.git",
-                "reference": "2632217f353d6585318fb6f0fdcc4d2c370dfdcc"
+                "reference": "4866c58e92ce4e851cd87d5d9d31b069b7284267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/di/zipball/2632217f353d6585318fb6f0fdcc4d2c370dfdcc",
-                "reference": "2632217f353d6585318fb6f0fdcc4d2c370dfdcc",
+                "url": "https://api.github.com/repos/joomla-framework/di/zipball/4866c58e92ce4e851cd87d5d9d31b069b7284267",
+                "reference": "4866c58e92ce4e851cd87d5d9d31b069b7284267",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
-            "require-dev": {
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
-            },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\DI\\": "src/",
@@ -302,7 +279,7 @@
                 "ioc",
                 "joomla"
             ],
-            "time": "2014-09-01 01:45:57"
+            "time": "2014-03-21 13:20:34"
         },
         {
             "name": "joomla/event",
@@ -490,16 +467,16 @@
         },
         {
             "name": "joomla/model",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/model.git",
-                "reference": "d495aa88e33b964ecc94ed8636be590e5084b8f5"
+                "reference": "f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/model/zipball/d495aa88e33b964ecc94ed8636be590e5084b8f5",
-                "reference": "d495aa88e33b964ecc94ed8636be590e5084b8f5",
+                "url": "https://api.github.com/repos/joomla-framework/model/zipball/f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9",
+                "reference": "f0aa791c67c8d02fcdcb7c98c13e2222fb03b9b9",
                 "shasum": ""
             },
             "require": {
@@ -508,16 +485,9 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
+                "joomla/test": "~1.0"
             },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Model\\": "src/",
@@ -535,7 +505,7 @@
                 "joomla",
                 "model"
             ],
-            "time": "2014-09-01 02:08:45"
+            "time": "2014-02-09 02:18:14"
         },
         {
             "name": "joomla/registry",
@@ -593,16 +563,16 @@
         },
         {
             "name": "joomla/router",
-            "version": "dev-master",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/router.git",
-                "reference": "1374334a0b7190284755b744515eb99fe59fc978"
+                "reference": "e7a22af3ae07ab33999c575dff29ab423b662859"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/router/zipball/1374334a0b7190284755b744515eb99fe59fc978",
-                "reference": "1374334a0b7190284755b744515eb99fe59fc978",
+                "url": "https://api.github.com/repos/joomla-framework/router/zipball/e7a22af3ae07ab33999c575dff29ab423b662859",
+                "reference": "e7a22af3ae07ab33999c575dff29ab423b662859",
                 "shasum": ""
             },
             "require": {
@@ -611,16 +581,9 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
+                "joomla/test": "~1.0"
             },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Router\\": "src/",
@@ -638,7 +601,7 @@
                 "joomla",
                 "router"
             ],
-            "time": "2014-09-01 02:17:33"
+            "time": "2014-08-23 19:40:48"
         },
         {
             "name": "joomla/session",
@@ -828,16 +791,16 @@
         },
         {
             "name": "joomla/view",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/view.git",
-                "reference": "2254fec4b1a11d2dfd0fe9dd096b263194583d22"
+                "reference": "4f368e317921f580a455adc3b95b3423e53ea8e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/view/zipball/2254fec4b1a11d2dfd0fe9dd096b263194583d22",
-                "reference": "2254fec4b1a11d2dfd0fe9dd096b263194583d22",
+                "url": "https://api.github.com/repos/joomla-framework/view/zipball/4f368e317921f580a455adc3b95b3423e53ea8e8",
+                "reference": "4f368e317921f580a455adc3b95b3423e53ea8e8",
                 "shasum": ""
             },
             "require": {
@@ -846,16 +809,9 @@
                 "php": ">=5.3.10"
             },
             "require-dev": {
-                "joomla/test": "~1.0",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "1.*"
+                "joomla/test": "~1.0"
             },
             "type": "joomla-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\View\\": "src/",
@@ -873,7 +829,100 @@
                 "joomla",
                 "view"
             ],
-            "time": "2014-09-01 02:30:31"
+            "time": "2014-02-09 07:07:32"
+        },
+        {
+            "name": "paquettg/php-html-parser",
+            "version": "1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paquettg/php-html-parser.git",
+                "reference": "6660555067ed5349ed95f7942fb3ddc74c359848"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paquettg/php-html-parser/zipball/6660555067ed5349ed95f7942fb3ddc74c359848",
+                "reference": "6660555067ed5349ed95f7942fb3ddc74c359848",
+                "shasum": ""
+            },
+            "require": {
+                "paquettg/string-encode": "0.1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPHtmlParser": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gilles Paquette",
+                    "email": "paquettg@gmail.com",
+                    "homepage": "http://gillespaquette.ca"
+                }
+            ],
+            "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
+            "homepage": "https://github.com/paquettg/php-html-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2014-04-15 16:44:27"
+        },
+        {
+            "name": "paquettg/string-encode",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paquettg/string-encoder.git",
+                "reference": "f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paquettg/string-encoder/zipball/f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62",
+                "reference": "f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "stringEncode": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gilles Paquette",
+                    "email": "paquettg@gmail.com",
+                    "homepage": "http://gillespaquette.ca"
+                }
+            ],
+            "description": "Facilitating the process of altering string encoding in PHP.",
+            "homepage": "https://github.com/paquettg/string-encoder",
+            "keywords": [
+                "charset",
+                "encoding",
+                "string"
+            ],
+            "time": "2013-12-13 15:26:20"
         },
         {
             "name": "psr/log",
@@ -920,16 +969,16 @@
         },
         {
             "name": "robmorgan/phinx",
-            "version": "dev-master",
+            "version": "v0.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robmorgan/phinx.git",
-                "reference": "0bdacd0a4fab1fe703c33bfc6839c13185f605fd"
+                "reference": "d918fef14f44bc2e68c6263327ba5b44582313c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/0bdacd0a4fab1fe703c33bfc6839c13185f605fd",
-                "reference": "0bdacd0a4fab1fe703c33bfc6839c13185f605fd",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/d918fef14f44bc2e68c6263327ba5b44582313c6",
+                "reference": "d918fef14f44bc2e68c6263327ba5b44582313c6",
                 "shasum": ""
             },
             "require": {
@@ -973,7 +1022,7 @@
                 "migrations",
                 "phinx"
             ],
-            "time": "2014-09-20 14:57:15"
+            "time": "2014-08-18 08:15:10"
         },
         {
             "name": "symfony/class-loader",
@@ -1839,102 +1888,45 @@
                 "windwalker"
             ],
             "time": "2014-09-24 12:22:19"
+        },
+        {
+            "name": "yakiu/strike",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yakiu/strike.git",
+                "reference": "6332bb4722ab23279ae546a09b25dfdc887e6d84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yakiu/strike/zipball/6332bb4722ab23279ae546a09b25dfdc887e6d84",
+                "reference": "6332bb4722ab23279ae546a09b25dfdc887e6d84",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Strike": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo",
+                    "email": "leo.on.the.earth@gmail.com"
+                }
+            ],
+            "description": "Strike - Yet Another Fast Router",
+            "time": "2014-09-16 04:14:23"
         }
     ],
     "packages-dev": [
-        {
-            "name": "paquettg/php-html-parser",
-            "version": "1.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paquettg/php-html-parser.git",
-                "reference": "6660555067ed5349ed95f7942fb3ddc74c359848"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paquettg/php-html-parser/zipball/6660555067ed5349ed95f7942fb3ddc74c359848",
-                "reference": "6660555067ed5349ed95f7942fb3ddc74c359848",
-                "shasum": ""
-            },
-            "require": {
-                "paquettg/string-encode": "0.1.0",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PHPHtmlParser": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gilles Paquette",
-                    "email": "paquettg@gmail.com",
-                    "homepage": "http://gillespaquette.ca"
-                }
-            ],
-            "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
-            "homepage": "https://github.com/paquettg/php-html-parser",
-            "keywords": [
-                "dom",
-                "html",
-                "parser"
-            ],
-            "time": "2014-04-15 16:44:27"
-        },
-        {
-            "name": "paquettg/string-encode",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paquettg/string-encoder.git",
-                "reference": "f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paquettg/string-encoder/zipball/f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62",
-                "reference": "f0e6ae7e974287e28fcb6e4e70cd9231a3b62b62",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "stringEncode": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gilles Paquette",
-                    "email": "paquettg@gmail.com",
-                    "homepage": "http://gillespaquette.ca"
-                }
-            ],
-            "description": "Facilitating the process of altering string encoding in PHP.",
-            "homepage": "https://github.com/paquettg/string-encoder",
-            "keywords": [
-                "charset",
-                "encoding",
-                "string"
-            ],
-            "time": "2013-12-13 15:26:20"
-        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.x-dev",
@@ -2313,9 +2305,15 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "windwalker/datamapper": 20,
-        "windwalker/compare": 20,
-        "windwalker/renderer": 20,
+        "joomla/application": 0,
+        "joomla/di": 0,
+        "joomla/controller": 0,
+        "joomla/model": 0,
+        "joomla/view": 0,
+        "joomla/router": 0,
+        "yakiu/strike": 20,
+        "filp/whoops": 0,
+        "robmorgan/phinx": 0,
         "symfony/http-foundation": 0
     },
     "prefer-stable": false,

@@ -1,0 +1,12 @@
+{
+	"system" : {
+		"debug" : "1",
+		"env" : "dev"
+	},
+	"db" : {
+		"driver" : "mysql",
+		"host" : "",
+		"user" : "",
+		"password" : ""
+	}
+}

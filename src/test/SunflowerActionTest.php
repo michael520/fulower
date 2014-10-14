@@ -1,28 +1,29 @@
 <?php
 /**
- * Part of fulower project. 
+ * Part of flower project. 
  *
- * @copyright  Copyright (C) 2011 - 2014 SMS Taiwan, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE
+ * @copyright  Copyright (C) 2014 {ORGANIZATION}. All rights reserved.
+ * @license    GNU General Public License version 2 or later;
  */
 
 namespace Test;
 
-use Fulower\Sunflower\Action;
+use Flower\Sunflower\Action;
 use Joomla\Registry\Registry;
-use test\Stub\StubAction;
+use Test\Mock\MockSystem;
+use Test\Stub\StubAction;
 
 /**
- * Class SunflowerActionTest
- *
- * @since 1.0
+ * The SunflowerActionTest class.
+ * 
+ * @since  {DEPLOY_VERSION}
  */
 class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 {
 	/**
 	 * Property instance.
 	 *
-	 * @var
+	 * @var Action
 	 */
 	protected $instance;
 
@@ -33,9 +34,14 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function setUp()
 	{
-		$this->instance = new Action(new Registry(array('where' => 'park')));
+		$this->instance = new Action(array('where' => 'park'));
 	}
 
+	/**
+	 * test__construct
+	 *
+	 * @return  void
+	 */
 	public function test__construct()
 	{
 		$this->assertInstanceOf('Joomla\\Registry\\Registry', $this->instance->getConfig());
@@ -48,9 +54,12 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testRun()
 	{
-		$this->assertEquals('hello!!', $this->instance->run());
+		$this->assertEquals('Police come~~~!!!', $this->instance->run());
 
-		$this->assertTrue(is_string($this->instance->run()), 'Sunflower\\Action::run() should return number, string get. in line : ' . __LINE__);
+		$this->assertTrue(
+			is_string($this->instance->run()),
+			'Sunflower\\Action::run() should return string. Line:' . __LINE__
+		);
 	}
 
 	/**
@@ -84,30 +93,26 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 				1,
 				1
 			),
-
 			array(
 				'case2',
 				2,
 				2
 			),
-
 			array(
 				'case3',
 				3,
 				0
 			),
-
 			array(
 				'case4',
 				4,
 				1
 			),
-
 			array(
 				'case5',
 				5,
 				2
-			)
+			),
 		);
 	}
 
@@ -115,8 +120,8 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 	 * testCount
 	 *
 	 * @param string $name
-	 * @param int $input
-	 * @param int $expected
+	 * @param int    $input
+	 * @param int    $expected
 	 *
 	 * @return  void
 	 *
@@ -127,7 +132,7 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals(
 			$expected,
 			$this->instance->count($input),
-			sprintf('%s fail', $name)
+			sprintf('%s fail.', $name)
 		);
 	}
 
@@ -136,18 +141,38 @@ class SunflowerActionTest extends \PHPUnit_Framework_TestCase
 	 *
 	 * @return  void
 	 */
-	public function noneTime()
+	public function testTime()
 	{
 		$action = new StubAction;
 
-		$this->assertEquals($action->time(), $action->getTime());
+		// $this->assertEquals($action->time(), $action->getTime());
+	}
 
+	/**
+	 * testSleep
+	 *
+	 * @return  void
+	 */
+	public function testSleep()
+	{
 		$config = new Registry;
 
 		$action = new Action($config);
 
 		$action->sleep();
 
-		$this->assertEquals(8, $config->get($config));
+		$this->assertEquals(8, $config->get('hour'));
+	}
+
+	/**
+	 * testMock
+	 *
+	 * @return  void
+	 */
+	public function testGetRequest()
+	{
+		$aciotn = new Action(array(), new MockSystem);
+
+		$this->assertEquals('YA', $aciotn->getRequest('kjrfie'));
 	}
 }

@@ -1,0 +1,5 @@
+{
+	"flower-sakura" : {
+		"pattern" : "/sakura/{id}/{alias}"
+	}
+}

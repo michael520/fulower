@@ -1,10 +1,13 @@
 <?php
 /**
- * Part of flower project. 
+ * Part of flower project.
  *
  * @copyright  Copyright (C) 2014 {ORGANIZATION}. All rights reserved.
  * @license    GNU General Public License version 2 or later;
  */
+
+use Windwalker\DataMapper\Adapter\DatabaseAdapter;
+use Windwalker\DataMapper\Adapter\WindwalkerAdapter;
 
 include_once __DIR__ . '/../vendor/autoload.php';
 
@@ -17,4 +20,16 @@ define('FLOWER_TEMPLATE', FLOWER_ROOT . '/template');
 
 define('JPATH_ROOT', FLOWER_ROOT);
 
-(new \Flower\Application\Application)->execute();
+$options = array(
+	'driver'   => 'mysql',
+	'host'     => 'localhost',
+	'user'     => 'root',
+	'password' => '1234',
+	'database' => 'flower',
+	'prefix'   => 'ww_'
+);
+
+$db = \Windwalker\Database\DatabaseFactory::getDbo('mysql', $options);
+
+// For DataMapper
+DatabaseAdapter::setInstance(new WindwalkerAdapter($db));

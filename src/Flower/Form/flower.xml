@@ -1,0 +1,35 @@
+<form>
+	<fieldset name="publish">
+		<field
+			name="state"
+			type="radio"
+			label="State"
+			description="State DESC"
+			class=""
+			default="1"
+			>
+			<option value="0">Down</option>
+			<option value="1">Up</option>
+		</field>
+	</fieldset>
+
+	<field
+		name="ordering"
+		type="text"
+		label="Ordering"
+		description=""
+		class=""
+		default=""
+		/>
+
+	<group name="params">
+		<field
+			name="foo"
+			type="text"
+			label="Foo"
+			description=""
+			class=""
+			default=""
+			/>
+	</group>
+</form>
