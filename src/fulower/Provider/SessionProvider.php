@@ -8,11 +8,13 @@
 
 namespace Fulower\Provider;
 
+
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 
-class WhoopsProvider implements ServiceProviderInterface
+class SessionProvider implements ServiceProviderInterface
 {
+
 	/**
 	 * Registers the service provider with a DI container.
 	 *
@@ -24,20 +26,6 @@ class WhoopsProvider implements ServiceProviderInterface
 	 */
 	public function register(Container $container)
 	{
-
-		if (!FULOWER_DEBUG)
-		{
-			return;
-		}
-
-		$whoops = new \Whoops\Run;
-		$handler = new \Whoops\Handler\PrettyPageHandler;
-
-		$whoops->pushHandler($handler);
-		$whoops->register();
-
-		$container->share('whoops', $whoops);
-		$container->share('whoops.handler', $handler);
 	}
 }
  

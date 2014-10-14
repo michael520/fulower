@@ -35,7 +35,8 @@ class DataBaseProvider implements ServiceProviderInterface
 				'host' => '127.0.0.1',
 				'user' => 'root',
 				'password' => 'mysql',
-				'name' => 'fulower_db'
+				'database' => 'fulower_db',
+				'prefix' => 'ww_'
 			);
 
 			$db = \Windwalker\Database\DatabaseFactory::getDbo('mysql', $options);
